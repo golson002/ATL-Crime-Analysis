@@ -62,7 +62,7 @@ zoneMarkers = [];
                 color: chooseColorType(response.crime_type[i]),
                 fillColor: chooseColorType(response.crime_type[i]),
                 //radius: 100
-            }).bindPopup(`<h3>Offense ID: ${response.offense_id[i]}</h3><hr><p>${response.crime_type[i]}</p><p>${response.neighborhood[i]}</p><p>${response.occur_time[i]} ${response.occur_date[i]}</p>`)
+            }).bindPopup(`<h3>Offense ID: ${response.offense_id[i]}</h3><hr><p>${response.crime_type[i]}</p><p>ZONE ${response.zone[i]}</p><p>${response.neighborhood[i]}</p><p>${response.occur_time[i]} ${response.occur_date[i]}</p>`)
         )   
  
         zoneMarkers.push(
@@ -73,7 +73,7 @@ zoneMarkers = [];
                     color: chooseColorZone(response.zone[i]),
                     fillColor: chooseColorZone(response.zone[i]),
                     //radius: 100
-                }).bindPopup(`<h3>Offense ID: ${response.offense_id[i]}</h3><hr><p>${response.crime_type[i]}</p><p>${response.neighborhood[i]}</p><p>${response.occur_time[i]} ${response.occur_date[i]}</p>`)
+                }).bindPopup(`<h3>Offense ID: ${response.offense_id[i]}</h3><hr><p>${response.crime_type[i]}</p><p>ZONE ${response.zone[i]}</p><p>${response.neighborhood[i]}</p><p>${response.occur_time[i]} ${response.occur_date[i]}</p>`)
             ) 
 
 
