@@ -34,7 +34,7 @@ const data =  {
                 'rgba(255,255,0, 1)',
                 'rgba(178,222,39, 1)',
                 'rgba(255,0,0, 1)',
-                'rgba(128,0,0 1)',
+                'rgba(15,10,222, 1)',
                 'rgba(0,0,0, 1)',
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
@@ -43,7 +43,7 @@ const data =  {
                 'rgba(255,255,0, 1)',
                 'rgba(178,222,39, 1)',
                 'rgba(255,0,0, 1)',
-                'rgba(128,0,0 1)',
+                'rgba(15,10,222, 1)',
                 'rgba(0,0,0, 1)',
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
@@ -55,7 +55,14 @@ const data =  {
 const config = {
     type: 'pie',
     data, 
-    options: {} 
+    options: {
+        plugins: {
+            title: {
+                display: true,
+                text: 'Crime Type Distribution'
+            }
+        }
+    } 
 };
 // Render Block
 const myChart = new Chart(
