@@ -3,25 +3,25 @@ earthquakeMarkers = [];
 
 function chooseColorType(crime) { 
 if(crime == "LARCENY-FROM VEHICLE"){
-    return "red"
+    return 'rgba(255,0,0, 1)'
  }
 else if(crime == "LARCENY-NON VEHICLE") {
-    return "orange"
+    return 'rgba(0,230,64, 1)'
 }
 else if(crime == "AGG ASSAULT") {
-    return "green"
+    return 'rgba(255,255,0, 1)'
 }
 else if(crime == "ROBBERY") {
-    return "blue"
+    return 'rgba(15,10,222, 1)'
 }
 else if(crime == "BURGLARY") {
-    return "yellow"
+    return 'rgba(249, 105, 14, 1)'
 }
 else if(crime == "AUTO THEFT") {
-    return "black"
+    return 'rgba(153, 102, 255, 1)'
 }
 else if(crime == "HOMICIDE") {
-    return "purple"
+    return 'rgba(0, 0, 0, 1)'
 }
 }
 
