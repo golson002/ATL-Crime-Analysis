@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style type="text/css">
+    .chartBox {
+    width:700px;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="chartBox">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script>
+// Fetch Data
+
+// Setup Block
+const data =  {
+        labels: ['Larceny', 'Burgalry', 'AGG Assault', 'Robbery', 'Auto Theft', 'Homicide'],
+        datasets: [{
+            label: 'Popular Crime Types',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255,255,0, 1)',
+                'rgba(255,0,0, 1)',
+                'rgba(128,0,0 1)',
+                'rgba(0,0,0, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderColor: [
+                'rgba(255,255,0, 1)',
+                'rgba(255,0,0, 1)',
+                'rgba(128,0,0 1)',
+                'rgba(0,0,0, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    }
+// Config Block
+const config = {
+    type: 'pie',
+    data, 
+    options: {} 
+};
+// Render Block
+const myChart = new Chart(
+    document.getElementById('myChart'),
+   config
+   );
+
+
+</script>
+
+</body>
+</html>
