@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime in Atlanta by Day</title>
+<style type="text/css">
+    .chartBox {
+    width:700px;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="chartBox">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script>
+// Fetch Data
+
+// Setup Block
+const data =  {
+        labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+        datasets: [{
+            label: 'Crime by Day of the Week',
+            data: [3169, 2847, 2946, 2753, 3266, 3279,3125],
+            backgroundColor: [
+                'rgba(255,26,104, 1)',
+                'rgba(54,162,235, 1)',
+                'rgba(255,206,86, 1)',
+                'rgba(0,0,0, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)',
+                'rgbda(0,0,255, 1)'
+            ],
+            borderColor: [
+                'rgba(0,0,0, 1)',
+                'rgba(0,0,0, 1)',
+                'rgba(0,0,0 1)',
+                'rgba(0,0,0, 1)',
+                'rgba(0,0,0, 1)',
+                'rgba(0, 0, 0, 1)'
+            ],
+            borderWidth: 1
+        }]
+    }
+// Config Block
+const config = {
+    type: 'bar',
+    data, 
+    options: {} 
+};
+// Render Block
+const myChart = new Chart(
+    document.getElementById('myChart'),
+   config
+   );
+
+
+</script>
+
+</body>
+</html>
