@@ -1,7 +1,7 @@
 
 # Atlanta, GA Crime Analysis
 	
-This project will visualize crime rates for Atlanta, GA in 2021. Crime rates and type have a direct correlation to property value and the amount of resources available to the community. According to neighborhoods  the average for violent crimes is much higher than other cities in Georgia and outside of Georgia with similar population sizes. Atlanta police department provides yearly reports for crime including  type, location, time of day and other measurements.
+This project visualizes crime rates for Atlanta, GA in 2021. Crime rates and type have a direct correlation to property value and the amount of resources available to the community. According to neighborhoods  the average for violent crimes is much higher than other cities in Georgia and outside of Georgia with similar population sizes. Atlanta police department provides yearly reports for crime including  type, location, time of day and other measurements.
 
 
 ## Delivering Data
