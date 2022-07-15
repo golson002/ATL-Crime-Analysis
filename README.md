@@ -8,10 +8,10 @@ This project will visualize crime rates for Atlanta, GA in 2021. Crime rates and
 
 Jupyter notebook was used to run Python script in order to clean the dataset. Columns were renamed, the index was reset, and null values were dropped using the script found in the “crime_notebook.ipynb.” Seven different columns were deleted based on the data needed to visualize the crime rate.
 
-### Deleting Columns
+##### Deleting Columns
 del crime_data['ibr_code']
 
-### Renaming Columns
+##### Renaming Columns
 cleaned_crime.rename(columns={'UC2_Literal':'crime_type'})
 
 
@@ -37,11 +37,11 @@ A dashboard with four different visuals were created using HTML, CSS, and  JavaS
 
 Below you will find the links to getting started with the different JavaScript libraries. 
 
-Chart.js link
+##### Chart.js link
 https://www.chartjs.org/docs/latest/getting-started/
 
 
-Plotly link
+##### Plotly link
 https://plotly.com/javascript/getting-started/
 
 
