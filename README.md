@@ -8,10 +8,10 @@ This project will visualize crime rates for Atlanta, GA in 2021. Crime rates and
 
 Jupyter notebook was used to run Python script in order to clean the dataset. Columns were renamed, the index was reset, and null values were dropped using the script found in the “crime_notebook.ipynb.” Seven different columns were deleted based on the data needed to visualize the crime rate.
 
-Deleting Columns
+### Deleting Columns
 del crime_data['ibr_code']
 
-Renaming Columns
+### Renaming Columns
 cleaned_crime.rename(columns={'UC2_Literal':'crime_type'})
 
 
@@ -29,6 +29,7 @@ if not database_exists(engine.url):
 
 Send the cleaned_crime_df to the atl_crime_db databse in PGadmin
 cleaned_crime_df.to_sql('atl_crime2021', con=engine, if_exists = 'append', index = False)
+
 
 ## Visualizing Data
 
